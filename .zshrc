@@ -49,6 +49,14 @@ setopt prompt_subst
 # プロンプトの右側(RPROMPT)にメソッドの結果を表示させる
 RPROMPT='`rprompt-git-current-branch`'
 
+# brew
+export HOMEBREW_PREFIX="/opt/homebrew";
+export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
+export HOMEBREW_REPOSITORY="/opt/homebrew";
+export HOMEBREW_SHELLENV_PREFIX="/opt/homebrew";
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin${PATH+:$PATH}";
+export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
+export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
 
 # rbenv path
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
@@ -85,15 +93,6 @@ export GOPATH="$HOME/.go"
 
 # nvm
 source $(brew --prefix nvm)/nvm.sh
-
-# flutter
-export PATH="$HOME/Documents/Flutter/sdk/flutter/bin:$PATH"
-
-# rust
-source ~/.cargo/env
-
-# dart
-export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 # LC_ALL
 export LC_ALL="en_US.UTF-8"
