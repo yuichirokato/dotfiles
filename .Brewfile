@@ -51,3 +51,4 @@ cask "wwdc"
 cask "zoom"
 
 mas "BetterSnapTool", id: 417375580
+mas "GIPHY Capture. The GIF Maker", id: 668208984
