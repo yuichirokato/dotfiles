@@ -107,6 +107,9 @@ export PATH=$ANDROID_HOME/tools:${PATH}
 export PATH=$ANDROID_HOME/tools/bin:${PATH}
 export PATH=$ANDROID_HOME/build-tools/29.0.5:${PATH}
 
+# Flutter
+export FLUTTER_PROJECT_DIRECTORY="$HOME/Documents/flutter"
+
 # Alias
 alias home='cd ~'
 alias edit-zshrc='vim ~/.zshrc'

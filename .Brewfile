@@ -8,6 +8,7 @@ tap "robotsandpencils/made"
 brew "openssl@1.1"
 brew "python@3.9", link: false
 brew "carthage"
+brew "flutter"
 brew "gh"
 brew "git-lfs"
 brew "go"
