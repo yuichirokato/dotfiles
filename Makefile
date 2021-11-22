@@ -8,6 +8,7 @@ setup: # ローカル環境のセットアップ
 	make install-homebrew
 	make install-ruby
 	make install-cocoapods
+	make install-xcode
 
 .PHONY: deploy-dotfiles
 deploy-dotfiles:
@@ -24,3 +25,7 @@ install-ruby:
 .PHONY: install-cocoapods
 install-cocoapods:
 	sh ${MAKEFILE_DIR}/cocoapods_install.sh
+
+.PHONY: install-xcode
+install-xcode:
+	sh ${MAKEFILE_DIR}/xcodes_install.sh
